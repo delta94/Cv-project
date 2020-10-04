@@ -3,14 +3,13 @@ import React from "react"
 import {
   Form,
   FormLabel,
-  FormInput,
   FormGroup,
   Heading,
   Button,
   TextInput
 
 } from "../Form/Form.components"
-export default function PersonalInfo({PersonalInfo, setPersonal}) {
+export default function PersonalInfo({setEdit, personalInfo, setPersonal}) {
 
   function submitHandler(e) {
     e.preventDefault();
@@ -23,6 +22,7 @@ export default function PersonalInfo({PersonalInfo, setPersonal}) {
       "email": email,
       "phone": phone,
     })
+    setEdit(false);
   }
 
   function validateName(e) {
@@ -51,7 +51,7 @@ export default function PersonalInfo({PersonalInfo, setPersonal}) {
       <Heading>Personal Information</Heading>
       <FormGroup>
         <FormLabel>Full Name</FormLabel>
-        <TextInput required onChange={validateName} name="name" type="text"></TextInput>
+        <TextInput defaultValue={personalInfo.name ? personalInfo.name : ""} required onChange={validateName} name="name" type="text"></TextInput>
       </FormGroup>
       <FormGroup>
         <FormLabel>Email</FormLabel>

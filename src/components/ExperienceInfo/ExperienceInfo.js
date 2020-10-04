@@ -12,9 +12,21 @@ import {
   TextInput
 } from "../Form/Form.components"
 
-export default function ExperienceInfo() {
+export default function ExperienceInfo(educationInfo, setEducation, setEdit) {
+  function submitHandler(e) {
+    e.preventDefault();
+    const institution = e.target.institution.value;
+    const from = e.target.from.value;
+    const to = e.target.to.value;
+    setEducation({
+      "institution": institution,
+      "from": from,
+      "to": to,
+    })
+    setEdit(false)
+  }
   return (
-    <Form>
+    <Form onSubmit={submitHandler}>
       <Heading>Past Experience</Heading>
       <FormGroupRow>
         <FormGroupCol>
@@ -23,17 +35,17 @@ export default function ExperienceInfo() {
         </FormGroupCol>
         <FormGroupCol>
           <FormLabel>Position</FormLabel>
-          <TextInput required type="text" />
+          <TextInput name="institution"required type="text" />
         </FormGroupCol>
       </FormGroupRow>
       <FormGroupRow>
         <FormGroupCol>
           <FormLabel>From</FormLabel>
-          <FormInput required type="date" />
+          <FormInput name="from" required type="date" />
         </FormGroupCol>
         <FormGroupCol>
           <FormLabel>Until</FormLabel>
-          <FormInput required type="date" />
+          <FormInput name="to" required type="date" />
         </FormGroupCol>
       </FormGroupRow>
       <FormGroup>
