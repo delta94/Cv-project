@@ -19,21 +19,21 @@ export default function ExperienceInfo() {
       <FormGroupRow>
         <FormGroupCol>
           <FormLabel>Company Name</FormLabel>
-          <TextInput type="text" />
+          <TextInput required type="text" />
         </FormGroupCol>
         <FormGroupCol>
           <FormLabel>Position</FormLabel>
-          <TextInput type="text" />
+          <TextInput required type="text" />
         </FormGroupCol>
       </FormGroupRow>
       <FormGroupRow>
         <FormGroupCol>
           <FormLabel>From</FormLabel>
-          <FormInput type="date" />
+          <FormInput required type="date" />
         </FormGroupCol>
         <FormGroupCol>
           <FormLabel>Until</FormLabel>
-          <FormInput type="date" />
+          <FormInput required type="date" />
         </FormGroupCol>
       </FormGroupRow>
       <FormGroup>

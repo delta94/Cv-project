@@ -18,16 +18,16 @@ export default function EducationInfo() {
       <Heading>Education</Heading>
       <FormGroup>
         <FormLabel>Institution</FormLabel>
-        <TextInput type="text"></TextInput>
+        <TextInput required type="text"></TextInput>
       </FormGroup>
       <FormGroupRow>
         <FormGroupCol>
           <FormLabel>Started</FormLabel>
-          <FormInput type="date"></FormInput>
+          <FormInput required type="date"></FormInput>
         </FormGroupCol>
         <FormGroupCol>
           <FormLabel>Finished</FormLabel>
-          <FormInput type="date"></FormInput>
+          <FormInput required type="date"></FormInput>
         </FormGroupCol>
       </FormGroupRow>
       <FormGroup>

@@ -1,4 +1,4 @@
-import React from "react"
+import React, { useState } from "react"
 
 import {
   CvContainer,
@@ -14,17 +14,19 @@ import {
 } from "../index"
 
 export default function Cv() {
+  const [personalInfo, setPersonal] = useState({})
   return (
     <CvContainer>
       <Form>
-        <PersonalInfo />
+        <PersonalInfo
+          personalInfo={personalInfo}
+          setPersonal={setPersonal}
+        />
         <EducationInfo />
         <ExperienceInfo />
       </Form>
       <ActualCv>
-        <CvEntry>
-
-        </CvEntry>
+        <CvEntry personalInfo={personalInfo}/>
       </ActualCv>
     </CvContainer>
   )

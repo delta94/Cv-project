@@ -8,7 +8,7 @@ export const GlobalStyle = createGlobalStyle`
   }
 `
 export const Container = styled.div`
-  max-width: 1300px;
-  margin: 0 auto;
+  min-height: 100vh;
   padding: 1rem;
+  background: rgba(0,0,200,0.2);
 `

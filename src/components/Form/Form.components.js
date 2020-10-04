@@ -16,13 +16,16 @@ export const FormInput = styled.input`
   margin-top: .25rem;
   padding: .375rem .75rem;
   border: none;
-  border: 2px solid rgba(222,222,200,0.8);
+  border: 2px solid black;
   border-radius: 3px;
   transition: all 0.3s ease;
   &:focus {
     border: 2px solid rgba(0,0,200,0.4);
     outline: none;
     box-shadow: none;
+  }
+  &:focus:invalid {
+    border: 2px solid rgba(200, 0, 0, 0.4);
   }
 
 `
@@ -36,6 +39,17 @@ export const TextInput = styled.input`
 
   &:focus {
     border-bottom: 2px solid rgba(0,0,200,0.4);
+    outline: none;
+    box-shadow: none;
+  }
+  &:focus:invalid, &:invalid{
+    outline: none;
+    box-shadow: none;
+    border-bottom: 2px solid rgba(200,0,0,0.4);
+  }
+  
+  &:focus:valid, &:valid {
+    border-bottom: 2px solid rgba(0,200,0,0.4);
   }
 `
 
@@ -45,15 +59,14 @@ export const FormLabel = styled.label`
 
 export const Button = styled.button`
   color: white;
-  background: #101522;
+  background: lightcoral;
   border: none;
   border-radius: 4px;
   padding: .375rem 1rem;
   transition: 0.3s ease;
 
   &:hover {
-    color: #101522;
-    background: white;
+    background: rgba(0,0,200,0.4);
   }
 `
 
