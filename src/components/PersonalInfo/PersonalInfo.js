@@ -6,7 +6,8 @@ import {
   FormInput,
   FormGroup,
   Heading,
-  Button
+  Button,
+  TextInput
 
 } from "../Form/Form.components"
 export default function PersonalInfo() {
@@ -15,18 +16,17 @@ export default function PersonalInfo() {
       <Heading>Personal Information</Heading>
       <FormGroup>
         <FormLabel>Full Name</FormLabel>
-        <FormInput
-          type="text"></FormInput>
+        <TextInput type="text"></TextInput>
       </FormGroup>
       <FormGroup>
         <FormLabel>Email</FormLabel>
-        <FormInput
-          type="email"></FormInput>
+        <TextInput
+          type="email"></TextInput>
       </FormGroup>
       <FormGroup>
         <FormLabel>Phone Number</FormLabel>
-        <FormInput
-          type="tel"></FormInput>
+        <TextInput
+          type="tel"></TextInput>
       </FormGroup>
       <FormGroup>
         <Button type="submit">Submit</Button>

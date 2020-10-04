@@ -9,6 +9,7 @@ import {
   Button,
   FormGroupRow,
   FormGroupCol,
+  TextInput
 } from "../Form/Form.components"
 
 export default function EducationInfo() {
@@ -17,7 +18,7 @@ export default function EducationInfo() {
       <Heading>Education</Heading>
       <FormGroup>
         <FormLabel>Institution</FormLabel>
-        <FormInput type="text"></FormInput>
+        <TextInput type="text"></TextInput>
       </FormGroup>
       <FormGroupRow>
         <FormGroupCol>

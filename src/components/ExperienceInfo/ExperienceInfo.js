@@ -9,6 +9,7 @@ import {
   Button,
   FormGroupCol,
   FormGroupRow,
+  TextInput
 } from "../Form/Form.components"
 
 export default function ExperienceInfo() {
@@ -18,11 +19,11 @@ export default function ExperienceInfo() {
       <FormGroupRow>
         <FormGroupCol>
           <FormLabel>Company Name</FormLabel>
-          <FormInput type="text" />
+          <TextInput type="text" />
         </FormGroupCol>
         <FormGroupCol>
           <FormLabel>Position</FormLabel>
-          <FormInput type="text" />
+          <TextInput type="text" />
         </FormGroupCol>
       </FormGroupRow>
       <FormGroupRow>

@@ -16,9 +16,29 @@ export const FormInput = styled.input`
   margin-top: .25rem;
   padding: .375rem .75rem;
   border: none;
+  border: 2px solid rgba(222,222,200,0.8);
   border-radius: 3px;
+  transition: all 0.3s ease;
+  &:focus {
+    border: 2px solid rgba(0,0,200,0.4);
+    outline: none;
+    box-shadow: none;
+  }
 
 `
+export const TextInput = styled.input`
+  width: 100%;
+  margin-top: .25rem;
+  border: none;
+  padding: .25rem;
+  border-bottom: 2px solid black;
+  transition: all 0.3s ease;
+
+  &:focus {
+    border-bottom: 2px solid rgba(0,0,200,0.4);
+  }
+`
+
 export const FormLabel = styled.label`
   display: block;
 `

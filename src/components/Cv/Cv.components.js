@@ -5,7 +5,7 @@ export const CvContainer = styled.div`
   max-width: 1300px;
   min-height: 70vh;
   display: flex;
-  background: #d9d9d9;
+
   border: 1px solid black;
 `
 
