@@ -1,0 +1,5 @@
+export { default as PersonalInfo } from "./PersonalInfo/PersonalInfo"
+export { default as Cv} from "./Cv/Cv"
+export { default as ExperienceInfo } from "./ExperienceInfo/ExperienceInfo"
+export { default as EducationInfo } from "./EducationInfo/EducationInfo"
+export { default as CvEntry } from "./CvEntry/CvEntry"
