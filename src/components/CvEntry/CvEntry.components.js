@@ -27,15 +27,19 @@ export const InfoSection = styled.section`
 
 export const Heading = styled.h3`
   padding: .5rem 0;
-  border-bottom: 1px solid black;
 `
 
 export const EditButton = styled.button`
-  padding: .375rem .75rem;
+  padding: .5rem 1.25rem;
   border-radius: 5px;
   border: none;
   background: lightcoral;
   color: white;
+  transition: all 0.3s ease;
+  
+  &:hover {
+    background: rgba(0,0,200,0.4);
+  }
 `
 
 export const Bold = styled.span`

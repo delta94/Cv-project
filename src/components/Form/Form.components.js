@@ -13,6 +13,7 @@ export const FormGroup = styled.div`
 `
 
 export const FormInput = styled.input`
+  width: 100%;
   margin-top: .25rem;
   padding: .375rem .75rem;
   border: none;
@@ -26,6 +27,10 @@ export const FormInput = styled.input`
   }
   &:focus:invalid {
     border: 2px solid rgba(200, 0, 0, 0.4);
+  }
+  &:invalid {
+    outline: none;
+    box-shadow: none;
   }
 
 `
@@ -42,18 +47,19 @@ export const TextInput = styled.input`
     outline: none;
     box-shadow: none;
   }
-  &:focus:invalid, &:invalid{
+  &:focus:invalid {
     outline: none;
     box-shadow: none;
     border-bottom: 2px solid rgba(200,0,0,0.4);
   }
   
-  &:focus:valid, &:valid {
+  &:focus:valid {
     border-bottom: 2px solid rgba(0,200,0,0.4);
   }
 `
 
 export const FormLabel = styled.label`
+  font-size: 14px;
   display: block;
 `
 
@@ -77,6 +83,7 @@ export const FormGroupRow = styled.div`
 `
 
 export const FormGroupCol = styled.div`
+  width: 50%;
   &:first-of-type {
     margin-right: 10px;
   }
