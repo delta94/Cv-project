@@ -13,13 +13,12 @@ export const Row = styled.div`
 
 export const Entry = styled.div`
   padding: .5rem;
-  background: rgba(200,0,0,.2);
   min-height: 70%;
 `
 
 export const InfoSection = styled.section`
   padding: .5rem;
-  background: rgba(0,200,0,.25);
+
 `
 
 export const Heading = styled.h3`

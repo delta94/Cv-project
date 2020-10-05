@@ -24,19 +24,16 @@ export default function Cv() {
     <CvContainer>
       <Form>
         <PersonalInfo
-          isEdit={isEditPersonal}
           setEdit={setEditPersonal}
           personalInfo={personalInfo}
           setPersonal={setPersonal}
         />
         <EducationInfo 
-          isEdit={isEditEducation}
           setEdit={setEditEducation}
           educationInfo={educationInfo}
           setEducation={setEducation}
         />
         <ExperienceInfo
-          isEdit={isEditExperience}
           setEdit={setEditExperience}
           experienceInfo={experienceInfo}
           setExperience={setExperience}
@@ -52,6 +49,10 @@ export default function Cv() {
           setEditEducation={setEditEducation} 
           setEducation={setEducation} 
           educationInfo={educationInfo}
+          isEditExperience={isEditExperience}
+          setEditExperience={setEditExperience}
+          setExperience={setExperience}
+          experienceInfo={experienceInfo}
           />
       </ActualCv>
     </CvContainer>
