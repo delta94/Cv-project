@@ -23,6 +23,9 @@ export default function PersonalInfo({setEdit, personalInfo, setPersonal}) {
       "phone": phone,
     })
     setEdit(false);
+    e.target.name.value = "";
+    e.target.email.value = "";
+    e.target.phone.value = "";
   }
 
   function validateName(e) {

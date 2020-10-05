@@ -10,5 +10,4 @@ export const GlobalStyle = createGlobalStyle`
 export const Container = styled.div`
   min-height: 100vh;
   padding: 1rem;
-  background: rgba(0,0,200,0.2);
 `

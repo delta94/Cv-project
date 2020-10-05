@@ -8,7 +8,7 @@ export const CvContainer = styled.div`
   display: flex;
   border: 1px solid black;
   border-radius: 5px;
-  background: #F8F8F8;
+
 `
 
 export const Form = styled.div`

@@ -26,6 +26,10 @@ export default function ExperienceInfo({ setEdit, experienceInfo, setExperience}
       to,
     })
     setEdit(false);
+    e.target.company.value = "";
+    e.target.role.value = "";
+    e.target.from.value = "";
+    e.target.to.value = "";
   }
   return (
     <Form onSubmit={submitHandler}>

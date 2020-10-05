@@ -25,6 +25,9 @@ export default function EducationInfo({educationInfo, setEducation, setEdit}) {
       "to": to,
     })
     setEdit(false)
+    e.target.institution.value = "";
+    e.target.from.value = "";
+    e.target.to.value = "";
   }
 
   return (
