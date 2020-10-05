@@ -8,8 +8,10 @@ export const CvContainer = styled.div`
   display: flex;
   border: 1px solid black;
   border-radius: 5px;
+  background: white;
+  opacity: 0.75;
 
-  @media screen and (max-width: 960px) {
+  @media screen and (max-width: 768px) {
     flex-direction: column;
   }
 `
@@ -19,7 +21,7 @@ export const Form = styled.div`
   max-width: 50%;
   border-right: 1px solid black;
 
-  @media screen and (max-width: 960px) {
+  @media screen and (max-width: 768px) {
     max-width: 100%;
     border: none;
     display: flex;
@@ -30,9 +32,10 @@ export const Form = styled.div`
 
 export const ActualCv = styled.div`
   padding: 1rem;
-    width: 100%;
+  width: 100%;
 
-  @media screen and (max-width: 960px) {
+
+  @media screen and (max-width: 768px) {
     width: 100%;
   }
 `

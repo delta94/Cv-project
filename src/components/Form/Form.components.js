@@ -17,6 +17,8 @@ export const FormInput = styled.input`
   margin-top: .25rem;
   padding: .375rem .75rem;
   border: none;
+  outline: none;
+  box-shadow: none;
   border: 2px solid black;
   border-radius: 3px;
   transition: all 0.3s ease;
@@ -38,6 +40,8 @@ export const TextInput = styled.input`
   width: 100%;
   margin-top: .25rem;
   border: none;
+  outline: none;
+  box-shadow: none;
   padding: .25rem;
   border-bottom: 2px solid black;
   transition: all 0.3s ease;
