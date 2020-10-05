@@ -32,16 +32,16 @@ export default function EducationInfo({educationInfo, setEducation, setEdit}) {
       <Heading>Education</Heading>
       <FormGroup>
         <FormLabel>Institution</FormLabel>
-        <TextInput name="institution" required type="text"></TextInput>
+        <TextInput defaultValue={educationInfo.institution ? educationInfo.institution : ""} name="institution" required type="text"></TextInput>
       </FormGroup>
       <FormGroupRow>
         <FormGroupCol>
           <FormLabel>Started</FormLabel>
-          <FormInput name="from" required type="date"></FormInput>
+          <FormInput defaultValue={educationInfo.from ? educationInfo.from : ""} name="from" required type="date"></FormInput>
         </FormGroupCol>
         <FormGroupCol>
           <FormLabel>Finished</FormLabel>
-          <FormInput name="to" required type="date"></FormInput>
+          <FormInput defaultValue={educationInfo.to ? educationInfo.to : ""} name="to" required type="date"></FormInput>
         </FormGroupCol>
       </FormGroupRow>
       <FormGroup>

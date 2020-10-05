@@ -15,10 +15,12 @@ import {
 export default function ExperienceInfo({ setEdit, experienceInfo, setExperience}) {
   function submitHandler(e) {
     e.preventDefault();
+    const company = e.target.company.value;
     const role = e.target.role.value;
     const from = e.target.from.value;
     const to = e.target.to.value;
     setExperience({
+      company,
       role,
       from,
       to,
@@ -31,21 +33,21 @@ export default function ExperienceInfo({ setEdit, experienceInfo, setExperience}
       <FormGroupRow>
         <FormGroupCol>
           <FormLabel>Company Name</FormLabel>
-          <TextInput required type="text" />
+          <TextInput defaultValue={experienceInfo.company} name="company" required type="text" />
         </FormGroupCol>
         <FormGroupCol>
           <FormLabel>Position</FormLabel>
-          <TextInput name="role"required type="text" />
+          <TextInput defaultValue={experienceInfo.role} name="role"required type="text" />
         </FormGroupCol>
       </FormGroupRow>
       <FormGroupRow>
         <FormGroupCol>
           <FormLabel>From</FormLabel>
-          <FormInput name="from" required type="date" />
+          <FormInput defaultValue={experienceInfo.from} name="from" required type="date" />
         </FormGroupCol>
         <FormGroupCol>
           <FormLabel>Until</FormLabel>
-          <FormInput name="to" required type="date" />
+          <FormInput defaultValue={experienceInfo.to} name="to" required type="date" />
         </FormGroupCol>
       </FormGroupRow>
       <FormGroup>

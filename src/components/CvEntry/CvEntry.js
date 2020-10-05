@@ -6,6 +6,7 @@ import {
   Heading,
   Row,
   EditButton,
+  Bold,
 } from "./CvEntry.components"
 import { PersonalInfo as EditPersonalInfo } from "../index"
 import { EducationInfo as EditEducationInfo } from "../index"
@@ -47,9 +48,9 @@ export default function CvEntry({
           !isEmpty(personalInfo) && !isEditPersonal &&
           <InfoSection>
             <Heading>Personal Information</Heading>
-            <Row>Full Name: {personalInfo.fullname}</Row>
-            <Row>Email: {personalInfo.email}</Row>
-            <Row>Phone Number: {personalInfo.phone}</Row>
+            <Row>Full Name: <Bold>{personalInfo.fullname}</Bold></Row>
+            <Row>Email: <Bold>{personalInfo.email}</Bold></Row>
+            <Row>Phone Number: <Bold>{personalInfo.phone}</Bold></Row>
             <EditButton onClick={toggleEditPersonal}>Edit</EditButton>
           </InfoSection>      
         }
@@ -61,9 +62,9 @@ export default function CvEntry({
           !isEmpty(educationInfo) && !isEditEducation &&
           <InfoSection>
             <Heading>Education</Heading>
-            <Row>Institution: {educationInfo.institution}</Row>
-            <Row>From: {educationInfo.from}</Row>
-            <Row>To: {educationInfo.to}</Row>
+            <Row>Institution: <Bold>{educationInfo.institution}</Bold></Row>
+            <Row>From: <Bold>{educationInfo.from}</Bold></Row>
+            <Row>To: <Bold>{educationInfo.to}</Bold></Row>
             <EditButton onClick={toggleEditEducation}>Edit</EditButton>
           </InfoSection>
         }
@@ -75,9 +76,10 @@ export default function CvEntry({
           !isEmpty(experienceInfo) && !isEditExperience && 
           <InfoSection>
             <Heading>Past Experience</Heading>
-            <Row>Role: {experienceInfo.role}</Row>
-            <Row>From: {experienceInfo.from.toLocaleString()}</Row>
-            <Row>To: {experienceInfo.to.toLocaleString()}</Row>
+            <Row>Company Name: <Bold>{experienceInfo.company}</Bold></Row>
+            <Row>Role: <Bold>{experienceInfo.role}</Bold></Row>
+            <Row>From: <Bold>{experienceInfo.from.toLocaleString()}</Bold></Row>
+            <Row>To: <Bold>{experienceInfo.to.toLocaleString()}</Bold></Row>
             <EditButton onClick={toggleEditExperience}>Edit</EditButton>
           </InfoSection>
         }

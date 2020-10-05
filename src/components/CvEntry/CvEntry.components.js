@@ -17,8 +17,12 @@ export const Entry = styled.div`
 `
 
 export const InfoSection = styled.section`
-  padding: .5rem;
-
+  border-bottom: 1px solid black;
+  padding-bottom: .5rem;
+  &:last-of-type {
+    border-bottom: none;
+    padding: 0;
+  }
 `
 
 export const Heading = styled.h3`
@@ -30,4 +34,10 @@ export const EditButton = styled.button`
   padding: .375rem .75rem;
   border-radius: 5px;
   border: none;
+  background: lightcoral;
+  color: white;
+`
+
+export const Bold = styled.span`
+  font-weight: bold;
 `

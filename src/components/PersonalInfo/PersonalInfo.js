@@ -51,15 +51,15 @@ export default function PersonalInfo({setEdit, personalInfo, setPersonal}) {
       <Heading>Personal Information</Heading>
       <FormGroup>
         <FormLabel>Full Name</FormLabel>
-        <TextInput defaultValue={personalInfo.name ? personalInfo.name : ""} required onChange={validateName} name="name" type="text"></TextInput>
+        <TextInput defaultValue={personalInfo.fullname ? personalInfo.fullname : ""} required onChange={validateName} name="name" type="text"></TextInput>
       </FormGroup>
       <FormGroup>
         <FormLabel>Email</FormLabel>
-        <TextInput required name="email" type="email"></TextInput>
+        <TextInput defaultValue={personalInfo.email ? personalInfo.email : ""} required name="email" type="email"></TextInput>
       </FormGroup>
       <FormGroup>
         <FormLabel>Phone Number</FormLabel>
-        <TextInput required onChange={validatePhone} name="phone" type="tel"></TextInput>
+        <TextInput defaultValue={personalInfo.phone ? personalInfo.phone : ""} required onChange={validatePhone} name="phone" type="tel"></TextInput>
       </FormGroup>
       <FormGroup>
         <Button type="submit">Submit</Button>
